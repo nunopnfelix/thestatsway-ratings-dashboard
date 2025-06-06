@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 st.set_page_config(
-    page_title="TheStatsWay",
+    page_title="TheStatsWay Ratings",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
