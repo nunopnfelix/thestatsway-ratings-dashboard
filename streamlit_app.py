@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 st.set_page_config(
-    page_title="TheStatsWay - Dashboard",
+    page_title="TheStatsWay",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -15,7 +15,7 @@ st.subheader('Check www.thestatsway.com for articles!', divider="grey")
 
 df = pd.read_csv('24_25AvgRatingData.csv')
 
-st.sidebar.header("⚡ @TheStatsWay ⚡", divider="grey")
+st.sidebar.header("⚡🔍 @TheStatsWay 🔍⚡", divider="grey")
 
 #Competition Filter
 
