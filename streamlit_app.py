@@ -1,14 +1,7 @@
-#conda create -n streamlit_app python=3.12
-#conda activate streamlit_app
-#pip install streamlit
-
 import streamlit as st
 import streamlit.web.cli as stcli
 import pandas as pd
 import numpy as np
-
-#Page Configuration
-base = "dark"
 
 st.set_page_config(
     page_title="2024/25 Season - Average Ratings",
@@ -22,8 +15,7 @@ st.subheader('Check www.thestatsway.com for articles!', divider="grey")
 
 df = pd.read_csv('24_25AvgRatingData.csv')
 
-st.sidebar.header("📆 2024/25 Season 📆")
-st.sidebar.subheader('@TheStatsWay', divider="grey")
+st.sidebar.header("@TheStatsWay", divider="grey")
 
 #Competition Filter
 
@@ -98,6 +90,3 @@ st.scatter_chart(data=df,
                  color = "Player",
                  use_container_width=True,
 )
-
-## Running in Terminal
-# streamlit run e:/Streamlit/streamlit_app.py
