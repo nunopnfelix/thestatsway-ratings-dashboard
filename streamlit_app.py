@@ -75,7 +75,8 @@ if MinutesFilter:
     df = df[df["Minutes"].between(MinutesFilter[0], MinutesFilter[1])]
 
 st.sidebar.divider()
-st.sidebar.write("Data from FBref")
+st.sidebar.write("Last Updated: Jun 6, 2025")
+st.sidebar.write("Data from FBref.")
 
 #Data Frame display
 st.dataframe(df)
