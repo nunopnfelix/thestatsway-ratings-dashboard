@@ -31,3 +31,4 @@ This repository provides an Average Ratings tool built with Streamlit, designed 
  <br>
 • Minutes
  <br>
+• Average Rating
