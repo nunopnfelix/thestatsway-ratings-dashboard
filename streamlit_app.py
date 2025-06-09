@@ -86,7 +86,7 @@ if RatingsFilter:
     df = df[df["Avg.Rating"].between(RatingsFilter[0], RatingsFilter[1])]
 
 st.sidebar.divider()
-st.sidebar.write("Last Updated: Jun 6, 2025")
+st.sidebar.write("Last Updated: Jun 9, 2025")
 st.sidebar.write("Data from FBref")
 
 #Data Frame display
