@@ -1,25 +1,22 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+#  📊 TheStatsWay - Ratings Dashboard 
 
-Description of the app ...
+This repository provides an Average Ratings tool built with Streamlit, designed for analyzing and comparing football players performances across different age groups, positions, competitions and leagues. The tool allows users to explore pre-set ratings for various players, offering an intuitive dashboard to look at.
 
-## Demo App
+## App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://thestatsway-ratings-dashboard.streamlit.app/)
 
-## GitHub Codespaces
+## Features
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+🔎 𝑪𝒐𝒎𝒑𝒆𝒕𝒊𝒕𝒊𝒐𝒏𝒔:
 
-## Section Heading
+ • Champions League (UCL)
+ • Europa League (UEL)
+ • Conference League (UECL)
 
-This is filler text, please replace this with text for this section.
+📂 𝑭𝒊𝒍𝒕𝒆𝒓𝒔:
 
-## Further Reading
-
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+• Team
+• Age
+• Position
+• Minutes
