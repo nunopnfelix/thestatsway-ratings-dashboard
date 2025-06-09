@@ -15,8 +15,7 @@ st.subheader('Check www.thestatsway.com for articles!', divider="grey")
 
 df = pd.read_csv('24_25AvgRatingData.csv')
 
-st.sidebar.header("⚡🔍 @TheStatsWay 🔍⚡")
-st.sidebar.subheader('𝐯𝟏.𝟎.𝟎𝟏', divider="grey")
+st.sidebar.header("⚡🔍 @TheStatsWay 🔍⚡", divider="grey")
 
 #Competition Filter
 
@@ -86,6 +85,7 @@ if RatingsFilter:
     df = df[df["Avg.Rating"].between(RatingsFilter[0], RatingsFilter[1])]
 
 st.sidebar.divider()
+st.sidebar.write('𝐯𝟏.𝟎.𝟎𝟏')
 st.sidebar.write("Last Updated: Jun 9, 2025")
 st.sidebar.write("Data from FBref")
 
