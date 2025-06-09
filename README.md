@@ -11,6 +11,7 @@ This repository provides an Average Ratings tool built with Streamlit, designed 
 🔎 𝑪𝒐𝒎𝒑𝒆𝒕𝒊𝒕𝒊𝒐𝒏𝒔:
 
  • Champions League (UCL)
+ <br>
  • Europa League (UEL)
  • Conference League (UECL)
 
