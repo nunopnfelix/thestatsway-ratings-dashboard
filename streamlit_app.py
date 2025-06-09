@@ -15,8 +15,8 @@ st.subheader('Check www.thestatsway.com for articles!', divider="grey")
 
 df = pd.read_csv('24_25AvgRatingData.csv')
 
-st.sidebar.header("⚡🔍 @TheStatsWay 🔍⚡" \
-"𝐯𝟏.𝟎.𝟎𝟏", divider="grey")
+st.sidebar.header("⚡🔍 @TheStatsWay 🔍⚡")
+st.sidebar.subheader('𝐯𝟏.𝟎.𝟎𝟏', divider="grey")
 
 #Competition Filter
 
