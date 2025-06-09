@@ -15,7 +15,8 @@ st.subheader('Check www.thestatsway.com for articles!', divider="grey")
 
 df = pd.read_csv('24_25AvgRatingData.csv')
 
-st.sidebar.header("⚡🔍 @TheStatsWay 🔍⚡", divider="grey")
+st.sidebar.header("⚡🔍 @TheStatsWay 🔍⚡" \
+"𝐯𝟏.𝟎.𝟎", divider="grey")
 
 #Competition Filter
 
@@ -43,9 +44,9 @@ if TeamFilter:
 
 AgeFilter = st.sidebar.slider(
     "Age Filter:", 
-    16, 
+    15, 
     42, 
-    (16, 42)
+    (15, 42)
 ) 
 
 if AgeFilter:
@@ -67,16 +68,26 @@ if PositionFilter:
 MinutesFilter = st.sidebar.slider(
     "Minutes Filter:", 
     0, 
-    1600, 
-    (0, 1600)
+    3420, 
+    (0, 3420)
 ) 
 
 if MinutesFilter:
     df = df[df["Minutes"].between(MinutesFilter[0], MinutesFilter[1])]
 
+RatingsFilter = st.sidebar.slider(
+    "Average Rating Filter:", 
+    0, 
+    10, 
+    (0, 10)
+) 
+
+if RatingsFilter:
+    df = df[df["Avg.Rating"].between(RatingsFilter[0], RatingsFilter[1])]
+
 st.sidebar.divider()
 st.sidebar.write("Last Updated: Jun 6, 2025")
-st.sidebar.write("Data from FBref.")
+st.sidebar.write("Data from FBref")
 
 #Data Frame display
 st.dataframe(df)
