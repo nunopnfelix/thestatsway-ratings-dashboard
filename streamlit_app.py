@@ -10,7 +10,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title('📊 European Competitions 2024/25 - Average Ratings 📊')
+st.title('📊 2024/25 Season - Average Ratings 📊')
 st.subheader('Check www.thestatsway.com for articles!', divider="grey")
 
 df = pd.read_csv('24_25AvgRatingData.csv')
