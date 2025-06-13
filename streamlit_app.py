@@ -84,9 +84,29 @@ RatingsFilter = st.sidebar.slider(
 if RatingsFilter:
     df = df[df["Avg.Rating"].between(RatingsFilter[0], RatingsFilter[1])]
 
+GoalsFilter = st.sidebar.slider(
+    "Goals Filter:", 
+    0, 
+    40, 
+    (0, 40)
+) 
+
+if GoalsFilter:
+    df = df[df["Goals"].between(GoalsFilter[0], GoalsFilter[1])]
+
+AssistsFilter = st.sidebar.slider(
+    "Assists Filter:", 
+    0, 
+    40, 
+    (0, 40)
+) 
+
+if AssistsFilter:
+    df = df[df["Assists"].between(AssistsFilter[0], AssistsFilter[1])]
+    
 st.sidebar.divider()
 st.sidebar.write('𝐯𝟏.𝟎.𝟎𝟏')
-st.sidebar.write("Last Updated: Jun 9, 2025")
+st.sidebar.write("Last Updated: Jun 13, 2025")
 st.sidebar.write("Data from FBref")
 
 #Data Frame display
