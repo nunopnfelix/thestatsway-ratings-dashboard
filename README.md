@@ -1,4 +1,4 @@
-#  📊 TheStatsWay - Ratings Dashboard 𝐯𝟏.𝟎.𝟎𝟑
+#  📊 TheStatsWay - Ratings Dashboard (𝐯𝟏.𝟎.𝟎𝟑)
 
 This repository provides an Average Ratings tool built with Streamlit, designed for analyzing and comparing football players performances across different age groups, positions, competitions and leagues. The tool allows users to explore pre-set ratings for various players, offering an intuitive dashboard to look at.
 
