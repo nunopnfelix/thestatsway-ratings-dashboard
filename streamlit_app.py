@@ -105,8 +105,8 @@ if AssistsFilter:
     df = df[df["Assists"].between(AssistsFilter[0], AssistsFilter[1])]
     
 st.sidebar.divider()
-st.sidebar.write('𝐯𝟏.𝟎.𝟎𝟐')
-st.sidebar.write("Last Updated: Jun 13, 2025")
+st.sidebar.write('𝐯𝟏.𝟎.𝟎𝟑')
+st.sidebar.write("Last Updated: Jul 06, 2025")
 st.sidebar.write("Data from FBref")
 
 #Data Frame display
