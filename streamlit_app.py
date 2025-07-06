@@ -44,8 +44,8 @@ if TeamFilter:
 AgeFilter = st.sidebar.slider(
     "Age Filter:", 
     15, 
-    42, 
-    (15, 42)
+    43, 
+    (15, 43)
 ) 
 
 if AgeFilter:
