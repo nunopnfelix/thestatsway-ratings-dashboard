@@ -110,4 +110,4 @@ st.sidebar.write("Last Updated: Jul 06, 2025")
 st.sidebar.write("Data from FBref")
 
 #Data Frame display
-st.dataframe(df)
+st.dataframe(df, height = 30)
