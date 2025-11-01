@@ -19,8 +19,8 @@ st.sidebar.header("🔍 @TheStatsWay", divider="grey")
 
 #Competition Filter
 
-CompFilter = st.selectbox(
-    "How would you like to be contacted?",
+CompFilter = st.sidebar.selectbox(
+    "Competitions to Select:",
     ("UEFA Champions League 2024/25", "UEFA Europa League 2024/25", "UEFA Conference League 2024/25",
     "Premier League 2024/25", "La Liga 2024/25", "Serie A 2024/25", "Bundesliga 2024/25",
     "Ligue 1 2024/25", "Liga Portugal 2024/25", "Eredivisie 2024/25"),
