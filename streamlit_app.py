@@ -20,9 +20,9 @@ st.sidebar.header("🔍 @TheStatsWay", divider="grey")
 #Competition Filter
 
 CompFilter = st.sidebar.multiselect(
-    #"Competition Filter:",
-    #options=df["Competition"].unique(),
-    #default="UEFA Champions League 2024/25"
+    "Competition Filter:",
+    options=df["Competition"].unique(),
+    default="UEFA Champions League 2024/25"
 )
 
 if CompFilter:
