@@ -103,10 +103,21 @@ AssistsFilter = st.sidebar.slider(
 
 if AssistsFilter:
     df = df[df["Assists"].between(AssistsFilter[0], AssistsFilter[1])]
+
+GAFilter = st.sidebar.slider(
+    "G+A Filter:", 
+    0, 
+    80, 
+    (0, 80)
+) 
+
+if GAFilter:
+    df = df[df["Assists"].between(GAFilter[0], GAFilter[1])]
+
     
 st.sidebar.divider()
 st.sidebar.write('𝐯𝟏.𝟏.𝟎𝟏')
-st.sidebar.write("Last Updated: Jul 06, 2025")
+st.sidebar.write("Last Updated: Nov 01, 2025")
 st.sidebar.write("Data from FBref")
 
 #Data Frame display
