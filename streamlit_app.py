@@ -10,12 +10,12 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title('📊 2024/25 Season - Average Ratings 📊')
+st.title('📊 Player Average Ratings 📊')
 st.subheader('Check www.thestatsway.com for articles!', divider="grey")
 
 df = pd.read_csv('24_25AvgRatingData.csv')
 
-st.sidebar.header("⚡🔍 @TheStatsWay 🔍⚡", divider="grey")
+st.sidebar.header("🔍 @TheStatsWay", divider="grey")
 
 #Competition Filter
 
@@ -105,20 +105,9 @@ if AssistsFilter:
     df = df[df["Assists"].between(AssistsFilter[0], AssistsFilter[1])]
     
 st.sidebar.divider()
-st.sidebar.write('𝐯𝟏.𝟎.𝟎𝟑')
+st.sidebar.write('𝐯𝟏.𝟏.𝟎𝟏')
 st.sidebar.write("Last Updated: Jul 06, 2025")
 st.sidebar.write("Data from FBref")
 
 #Data Frame display
 st.dataframe(df)
-
-st.divider()
-
-st.scatter_chart(data=df,
-                 x="Age",
-                 y="Minutes",
-                 x_label="Player Age",
-                 y_label="Minutes Played",
-                 color = "Player",
-                 use_container_width=True,
-)
