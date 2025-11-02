@@ -13,7 +13,11 @@ st.set_page_config(
 st.title('📊 Player Average Ratings 📊')
 st.subheader('Check www.thestatsway.com for articles!', divider="grey")
 
-df = pd.read_csv('24_25AvgRatingData.csv')
+df1 = pd.read_csv('24_25AvgRatingData.csv')
+df2 = pd.read_csv('25_26AvgRatingData.csv')
+frames = [df1, df2]
+
+df = pd.concat(frames)
 
 st.sidebar.header("🔍 @TheStatsWay", divider="grey")
 
